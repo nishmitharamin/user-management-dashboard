@@ -27,6 +27,8 @@ JSONPlaceholder API (for mock user data)
 1.  Clone the repository: `git clone https://github.com/YOUR_USERNAME/user-management-dashboard.git` (replace with your repo URL)
 2.  Open the `index.html` file in your web browser.
 
+   Deployement Link:https://nishmitha-amin-user-management.netlify.app/
+
 
 How to Use:
 1. Adding a User: Fill in the "Add User" form with the user's details and click "SUBMIT".

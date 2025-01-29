@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>User Management Board</h1>
+
+      <div class="error-area" id="errorArea"></div>
+
+      <div class="add-user">
+        <h2>Add User</h2>
+        <form id="userForm" aria-label="User Input Form">
+          <div class="input-group">
+            <label for="firstName">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="First Name *"
+              required
+              aria-label="First Name"
+              aria-describedby="firstNameError"
+            />
+            <span class="error-message" id="firstNameError"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Last Name"
+              aria-label="Last Name"
+            />
+            <span class="error-message" id="lastNameError"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email *"
+              required
+              aria-label="Email"
+              aria-describedby="emailError"
+            />
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="department">Department</label>
+            <input
+              type="text"
+              id="department"
+              placeholder="Department"
+              aria-label="Department"
+              aria-describedby="departmentError"
+            />
+            <span class="error-message" id="departmentError"></span>
+          </div>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search"
+          aria-label="Search Input"
+        />
+      </div>
+
+      <table id="userTable" aria-label="User Table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

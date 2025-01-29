@@ -28,6 +28,7 @@ JSONPlaceholder API (for mock user data)
 2.  Open the `index.html` file in your web browser.
 
    Deployement Link:https://nishmitha-amin-user-management.netlify.app/
+   Please do refresh once after you copy paste this link
 
 
 How to Use:
